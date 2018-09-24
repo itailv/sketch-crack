@@ -1,0 +1,8 @@
+target create /Applications/Sketch.app/Contents/MacOS/Sketch
+process launch
+breakpoint set -a 0x1003bc4c0
+breakpoint command add 1.1
+thread return 100
+continue
+DONE
+c
